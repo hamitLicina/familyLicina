@@ -8,11 +8,19 @@
 }
 
 :root {
+  --blue: #78BAE0;
+  --gray: #A2A0A2;
+  --beige: #D5B58E;
+  --navyBlue: #021937;
+  --beigeLight: #D4B78F;
+  --green: #71784E;
+  --maroon: #4B0715;
+  --pink: #EAAFBE;
   --red: #e50916;
-  --white:#fff; 
-  --header-height:70px;
-  --dark-bg:#221f1f;
-  --light-bg:#f7f3f3;
-  --button-bg:rgb(77, 77, 156);
-  --transparent-bg:rgba(20, 20, 20, 0.7);
+  --white: #fff;
+  --header-height: 70px;
+  --dark-bg: #221f1f;
+  --light-bg: #f7f3f3;
+  --button-bg: rgb(77, 77, 156);
+  --transparent-bg: rgba(20, 20, 20, 0.7);
 }
