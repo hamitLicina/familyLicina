@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--gray);
+    background-color: var(--blue);
     color: white;
     padding: 0 20px;
 }
@@ -38,4 +38,5 @@
 .home-icon {
     font-size: 2rem;
     cursor: pointer;
+    color: white
 }
