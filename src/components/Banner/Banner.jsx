@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Banner.css'
-import { getDocs, collection } from 'firebase/firestore'
+import { getDocs, collection, query, orderBy, limit } from 'firebase/firestore'
 import { db } from '../../config/FirebaseConfig'
 
 
@@ -14,8 +14,10 @@ function Banner() {
     useEffect(() => {
         // Create a variable to reference the articles
         const articleRef = collection(db, "FamilyMember")
+        // Set up query to filter responses  ( Sort and get latest 5 articles )
+        const q = query(articleRef, orderBy('createdAt', 'desc'), limit(5))
         // Get Family Member from db
-        getDocs(articleRef).then(res => {
+        getDocs(q, articleRef).then(res => {
             // console.log(res.docs[0].data())
             const articles = res.docs.map(item => ({
                 ...item.data(),
@@ -32,13 +34,23 @@ function Banner() {
 
     return (
         <div className='banner-container'>
-            <div className="main-article-container" style={{backgroundImage: `url(${mainArticle?.imageUrl})`}}>
+            <div className="main-article-container" style={{ backgroundImage: `url(${mainArticle?.imageUrl})` }}>
                 <div className="banner-info">
                     <h2>{mainArticle?.title}</h2>
                     <div className="main-article-info">
                         <p>{mainArticle?.createdAt?.toDate().toDateString()}</p>
                     </div>
                 </div>
+            </div>
+            <div className="other-articles-container">
+                {otherArticles.map(item => (<div className='other-article-item' style={{ backgroundImage: `url(${item?.imageUrl})` }}>
+                    <div className="banner-info">
+                        <h4>{item?.title}</h4>
+                        <div className="main-article-info">
+                            <small>{item?.createdAt?.toDate().toDateString()}</small>
+                        </div>
+                    </div>
+                </div>))}
             </div>
         </div>
     )
