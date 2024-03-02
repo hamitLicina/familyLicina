@@ -22,3 +22,7 @@
   --button-bg: rgb(77, 77, 156);
   --transparent-bg: rgba(20, 20, 20, 0.7);
 }
+
+body {
+  background-color: var(--gray);
+}
