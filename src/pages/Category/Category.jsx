@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../../config/FirebaseConfig";
 
+
+
 function Category() {
   const { categoryName } = useParams();
   const [articles, setArticles] = useState([]);
