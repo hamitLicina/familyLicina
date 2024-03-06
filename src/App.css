@@ -12,6 +12,7 @@
   --gray: #A2A0A2;
   --beige: #D5B58E;
   --navyBlue: #021937;
+  --airForceBlue: #1f4097;
   --beigeLight: #D4B78F;
   --green: #71784E;
   --maroon: #4B0715;
@@ -24,5 +25,5 @@
 }
 
 body {
-  background-color: var(--green);
+  background-color: white;
 }
