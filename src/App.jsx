@@ -5,6 +5,7 @@ import Category from './pages/Category/Category'
 import Header from './components/Header/Header'
 import Auth from './pages/Auth/Auth'
 import AddArticle from './pages/AddArticle/AddArticle'
+import AddFamilyMember from './pages/AddFamilyMember/AddFamilyMember'
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/auth' element={<Auth />} />
         <Route path='/addarticle' element={<AddArticle />} />
+        <Route path='/addfamilymember' element={<AddFamilyMember />} />
         <Route path='/category/:categoryName' element={<Category />} />
       </Routes>
     </BrowserRouter>

@@ -22,13 +22,16 @@ function Header() {
     <div className='header-container'>
       <FaHome onClick={() => navigate('/')} className='home-icon' />
       {
-        user && <Link to="/addarticle" className='auth-link' > Add Family Member </Link>
+        user && <Link to="/addarticle" className='auth-link' > Add Article </Link>
       }
       <div className='categories-container'>
         {
           categories.map((item, index) => (<Link className='nav-link' key={index} to={`/category/${item}`}>{item}</Link>))
         }
       </div>
+      {
+        user && <Link to="/addfamilymember" className='auth-link' > Add Family Member </Link>
+      }
       {
         // Before Code I need to install react firebase hooks
         user ? <div><span className='username'>{user?.displayName}</span> <button className="auth-link" onClick={() => signOut(auth)}>Log out</button> </div>
