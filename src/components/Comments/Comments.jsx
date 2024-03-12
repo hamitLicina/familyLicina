@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import './Comments.css'
 import { useAuthState } from 'react-firebase-hooks/auth'
@@ -8,6 +10,7 @@ import { useEffect, useState } from 'react'
 
 
 
+// eslint-disable-next-line react/prop-types
 function Comments({ articleId }) {
 
     // We need to get user data

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react'
 import './ArticleDetails.css'
 import { useParams } from 'react-router-dom';
@@ -26,6 +27,7 @@ function ArticleDetails() {
                 setArticle(res.data());
             })
             .catch((err) => console.log(err));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
@@ -49,6 +51,6 @@ function ArticleDetails() {
         </div>
     )
 
-};
+}
 
 export default ArticleDetails

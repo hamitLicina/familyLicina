@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import "./Category.css";
 import { useParams } from "react-router-dom";

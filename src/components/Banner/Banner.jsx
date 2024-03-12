@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react'
 import './Banner.css'
 import { getDocs, collection, query, orderBy, limit } from 'firebase/firestore'
@@ -57,6 +58,6 @@ function Banner() {
             </div>
         </div>
     )
-};
+}
 
 export default Banner;
