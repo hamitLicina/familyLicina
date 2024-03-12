@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react'
 import './AddArticle.css'
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'
@@ -62,7 +61,6 @@ function AddArticle() {
                             createdBy: user?.displayName,
                             userId: user?.uid,
                             createdAt: Timestamp.now().toDate(),
-                        // eslint-disable-next-line no-unused-vars
                         }).then((res) => {
                             toast("Article saved successfully!", {
                                 type: "success",

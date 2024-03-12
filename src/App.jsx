@@ -10,7 +10,6 @@ import ArticleDetails from './pages/ArticleDetails/ArticleDetails'
 
 
 
-
 function App() {
 
 
