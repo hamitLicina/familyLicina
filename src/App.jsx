@@ -7,6 +7,7 @@ import Auth from './pages/Auth/Auth'
 import AddArticle from './pages/AddArticle/AddArticle'
 import AddFamilyMember from './pages/AddFamilyMember/AddFamilyMember'
 import ArticleDetails from './pages/ArticleDetails/ArticleDetails'
+import Footer from './components/Footer/Footer'
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/category/:categoryName' element={<Category />} />
         <Route path='/article/:articleId' element={<ArticleDetails />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
