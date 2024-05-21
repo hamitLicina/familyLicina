@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 :root {
-  --blue: #78BAE0;
-  --gray: #A2A0A2;
-  --beige: #D5B58E;
+  --blue: #78bae0;
+  --gray: #a2a0a2;
+  --beige: #d5b58e;
   --navyBlue: #021937;
   --airForceBlue: #1f4097;
-  --beigeLight: #D4B78F;
-  --green: #71784E;
-  --maroon: #4B0715;
-  --pink: #EAAFBE;
+  --beigeLight: #d4b78f;
+  --green: #71784e;
+  --maroon: #4b0715;
+  --pink: #eaafbe;
   --header-height: 70px;
   --dark-bg: #221f1f;
   --light-bg: #f7f3f3;

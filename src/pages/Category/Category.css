@@ -1,12 +1,12 @@
 .category-article-container {
-    min-height: 100vh;
-    width: 94%;
-    margin: 2vh auto;
-    padding: 20px 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
+  min-height: 100vh;
+  width: 94%;
+  margin: 2vh auto;
+  padding: 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }

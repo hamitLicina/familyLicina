@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 
 
-function ArticleCard({article}) {
+function ArticleCard({ article }) {
     return (
         <div className='article-card'>
             <img src={article?.imageUrl} alt={article?.title} />
